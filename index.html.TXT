@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-size=1.0">
+    <title>Technical Documentation Page</title>
+    <link ref="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <nav id="navbar">
+      <header><h1>HTML Explained</h1></header>
+      <a href="#Introduction" class="nav-link"><h3>Introduction</h3></a>
+      <a href="#Basic_Structure_of_an_HTML_Document" class="nav-link"><h3>Basic Structure of an HTML Document</h3></a>
+      <a href="#Common_HTML_Elements" class="nav-link"><h3>Common HTML Elements</h3></a>
+      <a href="#Attributes_in_HTML" class="nav-link"><h3>Attributes in HTML</h3></a>
+      <a href="#Best_Practices_for_Writing_HTML" class="nav-link"><h3>Best Practices for Writing HTML</h3></a>
+      <a href="#Conclusion" class="nav-link"><h3>Conclusion</h3></a>
+    </nav>
+
+    <div class="main-content">
+    <main id="main-doc">
+      <section class="main-section" id="Introduction">
+        <header><h2>Introduction</h2></header>
+          <p>HTML (HyperText Markup Language) is the standard markup language used to create and structure content on the web. It forms the backbone of all websites and web applications by defining the structure and layout of web pages. HTML uses a system of tags and attributes to organize text, images, links, forms, and other elements into a coherent document that browsers can render.</p>
+          <p>This documentation provides an overview of HTML, its core concepts, and best practices for writing clean, semantic, and accessible HTML code.</p>
+      </section>
+      <section class="main-section" id="Basic_Structure_of_an_HTML_Document">
+        <header><h2>Basic Structure of an HTML Document</h2></header>
+        <p>Every HTML document follows a standard structure that includes essential elements. Below is an example of a basic HTML document:</p>
+        <pre>
+          <code>
+&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+  &lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;Document Title&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;h1&gt;Welcome to My Website&lt;/h1&gt;
+    &lt;p&gt;This is a paragraph of text.&lt;/p&gt;
+  &lt;/body&gt;
+&lt;/html&gt;
+          </code>  
+        </pre>
+        <ul>
+            <li><code>&lt;!DOCTYPE html&gt:</code> Declares the document type and version of HTML (HTML5 in this case).</li>
+            <li><code>&lt;html&gt:</code> The root element that wraps all content on the page.</li>
+            <li><code>&lt;head&gt:</code> Contains metadata, such as the page title, character set, and links to stylesheets or</li>
+            <li><code>&lt;body&gt:</code> Contains the visible content of the webpage, such as text, images, and links.</li>
+      </section>
+      <section class="main-section" id="Common_HTML_Elements">
+        <header><h2>Common HTML Elements</h2></header>
+        <p>HTML provides a wide range of elements to structure and format content. Below are some of the most commonly used elements:</p>
+        <ul>
+        <li><code>&lt;h1&gt;</code> to <code>&lt;h6&gt;</code>: Headings</li>
+        <li><code>&lt;p&gt;</code>: Paragraphs</li>
+        <li><code>&lt;a&gt;</code>: Links</li>
+        <li><code>&lt;img&gt;</code>: Images</li>
+        <li><code>&lt;ul&gt;</code>: Unordered lists</li>
+        <li><code>&lt;ol&gt;</code>: Ordered lists</li>
+        <li><code>&lt;li&gt;</code>: List items</li>
+        <li><code>&lt;div&gt;</code>: Divisions or sections</li>
+        <li><code>&lt;span&gt;</code>: Inline container</li>
+        <li><code>&lt;strong&gt;</code>: Bold text (strong importance)</li>
+        <li><code>&lt;em&gt;</code>: Italic text (emphasis)</li>
+        <li><code>&lt;header&gt;</code>: Header section</li>
+        <li><code>&lt;main&gt;</code>: Main content</li>
+        <li><code>&lt;footer&gt;</code>: Footer section</li>
+        <li><code>&lt;section&gt;</code>: Generic section</li>
+        <li><code>&lt;article&gt;</code>: Self-contained content</li>
+        <li><code>&lt;nav&gt;</code>: Navigation links</li>
+        <li><code>&lt;form&gt;</code>: Forms</li>
+        <li><code>&lt;input&gt;</code>: Input fields</li>
+        <li><code>&lt;button&gt;</code>: Buttons</li>
+    </ul>
+      </section>
+      <section class="main-section" id="Attributes_in_HTML">
+        <header><h2>Attributes in HTML</h2></header>
+        <p>Attributes provide additional information about HTML elements and are always included in the opening tag. Some common attributes include:</p>
+        <ul>
+          <li><code>id</code>: Specifies a unique identifier for an element.</li>
+          <li><code>class</code>: Assigns one or more class names to an element for styling or scripting.</li>
+          <li><code>src</code>: Specifies the source URL for elements like <code>&lt;img&gt;</code> or <code>&lt;script&gt;</code>.</li>
+          <li><code>href</code>: Specifies the destination URL for links <code>(&lt;a&gt)</code>.</li>
+          <li><code>alt</code>: Provides alternative text for images (used for accessibility).</li>
+      </section>
+      <section class="main-section" id="Best_Practices_for_Writing_HTML">
+        <header><h2>Best Practices for Writing HTML</h2></header>
+        <p>To ensure your HTML is clean, semantic, and accessible, follow these best practices:</p>
+        <ol>
+          <li>
+            <ul>
+              <li>Use elements like <code> &lt;header&gt;, &lt;main&gt;, &lt;footer&gt;, </code> and <code> &lt;article&gt; </code> to give meaning to your content.</li>
+              <li>Avoid using <code>&lt;div&gt;</code> for everything; choose elements that describe the content's purpose.</li>
+            </ul>
+          </li>
+          <li>
+            <ul>
+              <li>Always include alt attributes for images.</li>
+              <li>Use ARIA (Accessible Rich Internet Applications) attributes when necessary.</li>
+              <li>Ensure proper heading hierarchy <code>(&lt;h1&gt; to &lt;h6&gt;)</code>.</li>
+            </ul>
+          </li>
+          <li>
+            <ul>
+              <li>Use consistent indentation and formatting.</li>
+              <li>Avoid inline styles; use CSS for styling instead.</li>
+              <li>Close all tags properly.</li>
+            </ul>
+          </li>
+          <li>
+            <ul>
+              <li>Use tools like the W3C Markup Validation Service to check for errors in your HTML.</li>
+            </ul>
+          </li>
+          <li>
+            <ul>
+              <li>Minimize the use of unnecessary elements and attributes.</li>
+              <li>Use external stylesheets and scripts to keep your HTML file lightweight.</li>
+            </ul>
+          </li>
+
+      </section>        
+      <section class="main-section" id="Conclusion">
+        <header><h2>Conclusion</h2></header>
+        <p>HTML is the foundation of web development, and mastering it is essential for creating well-structured, accessible, and maintainable websites. By following the principles and best practices outlined in this documentation, you can write clean and semantic HTML that enhances both user experience and search engine optimization.</p>
+        <p>For further learning, refer to resources like MDN Web Docs or W3Schools. Happy coding! 🚀</p>
+      </section>
+    </main>
+    </div>
+  </body>
