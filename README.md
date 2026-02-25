@@ -20,12 +20,6 @@ A fully responsive, interactive HTML & CSS documentation page covering 30+ core 
 
 ---
 
-## 📸 Demo
-
-> Add a screenshot or GIF of your project here
-
----
-
 ## 📂 Project Structure
 
 ```
